@@ -25,6 +25,9 @@
 /* Begin PBXFileReference section */
 		81AE283B1ECB2D0E0054CFCD /* ExamPrepSoundsFishy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExamPrepSoundsFishy; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AE283E1ECB2D0E0054CFCD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		81AE28451ECB2D880054CFCD /* A Warmup - 3 - Sounds fishy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A Warmup - 3 - Sounds fishy.pdf"; sourceTree = "<group>"; };
+		81AE28471ECB2E110054CFCD /* A Warmup - 3 - Sounds Fishy – Algorithm.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 3 - Sounds Fishy – Algorithm.docx"; sourceTree = "<group>"; };
+		81AE28481ECB2E480054CFCD /* A Warmup - 3 - Sounds Fishy - Test Plan.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Warmup - 3 - Sounds Fishy - Test Plan.docx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		81AE28321ECB2D0E0054CFCD = {
 			isa = PBXGroup;
 			children = (
+				81AE28461ECB2D920054CFCD /* Documents */,
 				81AE283D1ECB2D0E0054CFCD /* ExamPrepSoundsFishy */,
 				81AE283C1ECB2D0E0054CFCD /* Products */,
 			);
@@ -60,6 +64,16 @@
 				81AE283E1ECB2D0E0054CFCD /* main.swift */,
 			);
 			path = ExamPrepSoundsFishy;
+			sourceTree = "<group>";
+		};
+		81AE28461ECB2D920054CFCD /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				81AE28471ECB2E110054CFCD /* A Warmup - 3 - Sounds Fishy – Algorithm.docx */,
+				81AE28481ECB2E480054CFCD /* A Warmup - 3 - Sounds Fishy - Test Plan.docx */,
+				81AE28451ECB2D880054CFCD /* A Warmup - 3 - Sounds fishy.pdf */,
+			);
+			name = Documents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
