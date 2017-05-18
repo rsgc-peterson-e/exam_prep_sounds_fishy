@@ -19,13 +19,13 @@ import Foundation
  Make use of your test plan and algorithm to ensure your code is complete.
  
  */
-var inputToProcess : String = ""
+var inputs = [Int]()
 
 // Loop until valid input is received
-while inputToProcess == "" {
+while inputs.count < 4 {
     
     // Show the prompt
-    print("Ask the question here? ", terminator: "")
+    print("Reading \(inputs.count + 1)? ", terminator: "")
     
     // Get the user's input
     var input : String?
@@ -33,14 +33,11 @@ while inputToProcess == "" {
     
     // Use optional binding to see if the string can be unwrapped (to see if it is not nil)
     if let notNilInput = input {
-        
-        // You probably need to add additional checks to be sure the
-        // input received is valid
-        // Add checks as needed...
-        
-        // Save the input given, as we are certain it's what we are looking for now
-        inputToProcess = notNilInput
-        
+        if let inputAsInt = Int(notNilInput) {
+            if (inputAsInt > 0) {
+                inputs.append(inputAsInt)
+            }
+        }
     }
     
 }
@@ -56,7 +53,21 @@ while inputToProcess == "" {
  */
 
 // Add 'process' code below....
-print("replace with process logic")
+
+
+var output : String!
+
+if (inputs[0] == inputs[1] && inputs[2] == inputs[3] && inputs[0] == inputs[2]) {
+    output = "Fish at Constant Depth"
+} else if (inputs[0] > inputs[1] && inputs[1] > inputs[2] && inputs[2] > inputs[3]) {
+    output = "Fish Diving"
+} else if (inputs[0] < inputs[1] && inputs[1] < inputs[2] && inputs[2] < inputs[3]) {
+    output = "Fish Rising"
+} else {
+    output = "No Fish"
+}
+
+
 
 
 /*
@@ -70,4 +81,4 @@ print("replace with process logic")
  */
 
 // Add 'output' code below... replace what is here as needed.
-print("The input given was: \(inputToProcess)")
+print(output)
